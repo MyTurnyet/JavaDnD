@@ -1,4 +1,4 @@
-public class CharacterAttributeList {
+public class CharacterAttributeList implements iCharacterAttributeList {
 
     private final iCharacterAttribute strength;
     private final iCharacterAttribute dexterity;
