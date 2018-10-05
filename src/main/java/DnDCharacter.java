@@ -1,17 +1,17 @@
-public class DnDCharacter {
+class DnDCharacter {
 
     private final iCharacterAttributeList attributeList;
 
-    public DnDCharacter(iCharacterAttributeList attributeList) {
+    private DnDCharacter(iCharacterAttributeList attributeList) {
 
         this.attributeList = attributeList;
     }
 
-    public DnDCharacter() {
+    DnDCharacter() {
         this(new CharacterAttributeList());
     }
 
-    public iCharacterAttributeList attributes() {
+    iCharacterAttributeList attributes() {
 
         return attributeList;
     }

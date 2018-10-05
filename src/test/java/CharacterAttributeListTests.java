@@ -6,65 +6,76 @@ public class CharacterAttributeListTests {
     @Test
     public void should_HaveStrengthAttribute() {
         //arrange
-        iCharacterAttribute expectedStr = new DnDAttribute(10);
-        CharacterAttributeList attributeList = new CharacterAttributeList();
+        final iAttributeValue baseValue = new AttributeValue(10);
+        final iCharacterAttribute expectedStr = new DnDAttribute(baseValue);
+        final iCharacterAttributeList attributeList = new CharacterAttributeList();
         //act
-        iCharacterAttribute actualStr = attributeList.strength();
+        final iCharacterAttribute actualStr = attributeList.strength();
 
         //assert
         assertThat(actualStr).isEqualTo(expectedStr);
     }
+
     @Test
     public void should_HaveDexterityAttribute() {
         //arrange
-        iCharacterAttribute expectedDex = new DnDAttribute(10);
-        CharacterAttributeList attributeList = new CharacterAttributeList();
+        final iAttributeValue baseValue = new AttributeValue(10);
+        final iCharacterAttribute expectedDex = new DnDAttribute(baseValue);
+        final iCharacterAttributeList attributeList = new CharacterAttributeList();
         //act
-        iCharacterAttribute actualDex = attributeList.dexterity();
+        final iCharacterAttribute actualDex = attributeList.dexterity();
 
         //assert
         assertThat(actualDex).isEqualTo(expectedDex);
     }
+
     @Test
     public void should_HaveConstitutionAttribute() {
         //arrange
-        iCharacterAttribute expectedCon = new DnDAttribute(10);
-        CharacterAttributeList attributeList = new CharacterAttributeList();
+        final iAttributeValue baseValue = new AttributeValue(10);
+        final iCharacterAttribute expectedCon = new DnDAttribute(baseValue);
+        final iCharacterAttributeList attributeList = new CharacterAttributeList();
         //act
-        iCharacterAttribute actualCon = attributeList.constitution();
+        final iCharacterAttribute actualCon = attributeList.constitution();
 
         //assert
         assertThat(actualCon).isEqualTo(expectedCon);
     }
+
     @Test
     public void should_HaveIntelligenceAttribute() {
         //arrange
-        iCharacterAttribute expectedInt = new DnDAttribute(10);
-        CharacterAttributeList attributeList = new CharacterAttributeList();
+        final iAttributeValue baseValue = new AttributeValue(10);
+        final iCharacterAttribute expectedInt = new DnDAttribute(baseValue);
+        final iCharacterAttributeList attributeList = new CharacterAttributeList();
         //act
-        iCharacterAttribute actualInt = attributeList.intelligence();
+        final iCharacterAttribute actualInt = attributeList.intelligence();
 
         //assert
         assertThat(actualInt).isEqualTo(expectedInt);
     }
+
     @Test
     public void should_HaveWisdomAttribute() {
         //arrange
-        iCharacterAttribute expectedWis = new DnDAttribute(10);
-        CharacterAttributeList attributeList = new CharacterAttributeList();
+        final iAttributeValue baseValue = new AttributeValue(10);
+        final iCharacterAttribute expectedWis = new DnDAttribute(baseValue);
+        final iCharacterAttributeList attributeList = new CharacterAttributeList();
         //act
-        iCharacterAttribute actualWis = attributeList.wisdom();
+        final iCharacterAttribute actualWis = attributeList.wisdom();
 
         //assert
         assertThat(actualWis).isEqualTo(expectedWis);
     }
+
     @Test
     public void should_HaveCharismaAttribute() {
         //arrange
-        iCharacterAttribute expectedChr = new DnDAttribute(10);
-        CharacterAttributeList attributeList = new CharacterAttributeList();
+        final iAttributeValue baseValue = new AttributeValue(10);
+        final iCharacterAttribute expectedChr = new DnDAttribute(baseValue);
+        final iCharacterAttributeList attributeList = new CharacterAttributeList();
         //act
-        iCharacterAttribute actualChr = attributeList.charisma();
+        final iCharacterAttribute actualChr = attributeList.charisma();
 
         //assert
         assertThat(actualChr).isEqualTo(expectedChr);

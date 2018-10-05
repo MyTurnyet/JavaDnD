@@ -1,15 +1,15 @@
 import org.testng.annotations.Test;
-import static org.assertj.core.api.Assertions.*;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class CharacterTests {
 
     @Test
     public void should_HaveAttributeList() {
         //arrange
-        CharacterAttributeList characterAttributeList = new CharacterAttributeList();
-        DnDCharacter character = new DnDCharacter();
+        final DnDCharacter character = new DnDCharacter();
         //act
-        iCharacterAttributeList attributeList = character.attributes();
+        final iCharacterAttributeList attributeList = character.attributes();
         //assert
         assertThat(attributeList).isNotNull();
     }

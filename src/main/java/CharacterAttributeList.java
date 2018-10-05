@@ -8,8 +8,8 @@ public class CharacterAttributeList implements iCharacterAttributeList {
     private final iCharacterAttribute charisma;
 
 
-    public CharacterAttributeList(iCharacterAttribute strength, iCharacterAttribute dexterity, iCharacterAttribute constitution,
-                                  iCharacterAttribute intelligence, iCharacterAttribute wisdom, iCharacterAttribute charisma) {
+    private CharacterAttributeList(iCharacterAttribute strength, iCharacterAttribute dexterity, iCharacterAttribute constitution,
+                                   iCharacterAttribute intelligence, iCharacterAttribute wisdom, iCharacterAttribute charisma) {
         this.strength = strength;
         this.dexterity = dexterity;
         this.constitution = constitution;
@@ -18,9 +18,13 @@ public class CharacterAttributeList implements iCharacterAttributeList {
         this.charisma = charisma;
     }
 
-    public CharacterAttributeList() {
-        this(new DnDAttribute(10),new DnDAttribute(10), new DnDAttribute(10),
-                new DnDAttribute(10), new DnDAttribute(10), new DnDAttribute(10));
+    private CharacterAttributeList(iAttributeValue defaultValue) {
+        this(new DnDAttribute(defaultValue), new DnDAttribute(defaultValue), new DnDAttribute(defaultValue),
+                new DnDAttribute(defaultValue), new DnDAttribute(defaultValue), new DnDAttribute(defaultValue));
+    }
+
+    CharacterAttributeList() {
+        this(new AttributeValue(10));
     }
 
     public iCharacterAttribute strength() {
