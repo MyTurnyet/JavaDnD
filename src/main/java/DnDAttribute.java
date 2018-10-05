@@ -1,5 +1,3 @@
-interface iCharacterAttribute {}
-
 public class DnDAttribute implements iCharacterAttribute {
     private final int value;
 
