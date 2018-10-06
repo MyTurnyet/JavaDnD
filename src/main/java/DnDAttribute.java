@@ -1,7 +1,7 @@
-public class DnDAttribute implements iCharacterAttribute {
-    private final iAttributeValue value;
+public class DnDAttribute implements CharacterAttribute {
+    private final AttributeScore value;
 
-    DnDAttribute(iAttributeValue defaultValue) {
+    DnDAttribute(AttributeScore defaultValue) {
         value = defaultValue;
     }
 

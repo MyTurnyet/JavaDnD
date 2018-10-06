@@ -6,11 +6,11 @@ public class CharacterAttributeListTests {
     @Test
     public void should_HaveStrengthAttribute() {
         //arrange
-        final iAttributeValue baseValue = new AttributeValue(10);
-        final iCharacterAttribute expectedStr = new DnDAttribute(baseValue);
-        final iCharacterAttributeList attributeList = new CharacterAttributeList();
+        final AttributeScore baseValue = new CharacterAttributeScore(10);
+        final CharacterAttribute expectedStr = new DnDAttribute(baseValue);
+        final AttributeList attributeList = new CharacterAttributeList();
         //act
-        final iCharacterAttribute actualStr = attributeList.strength();
+        final CharacterAttribute actualStr = attributeList.strength();
 
         //assert
         assertThat(actualStr).isEqualTo(expectedStr);
@@ -19,11 +19,11 @@ public class CharacterAttributeListTests {
     @Test
     public void should_HaveDexterityAttribute() {
         //arrange
-        final iAttributeValue baseValue = new AttributeValue(10);
-        final iCharacterAttribute expectedDex = new DnDAttribute(baseValue);
-        final iCharacterAttributeList attributeList = new CharacterAttributeList();
+        final AttributeScore baseValue = new CharacterAttributeScore(10);
+        final CharacterAttribute expectedDex = new DnDAttribute(baseValue);
+        final AttributeList attributeList = new CharacterAttributeList();
         //act
-        final iCharacterAttribute actualDex = attributeList.dexterity();
+        final CharacterAttribute actualDex = attributeList.dexterity();
 
         //assert
         assertThat(actualDex).isEqualTo(expectedDex);
@@ -32,11 +32,11 @@ public class CharacterAttributeListTests {
     @Test
     public void should_HaveConstitutionAttribute() {
         //arrange
-        final iAttributeValue baseValue = new AttributeValue(10);
-        final iCharacterAttribute expectedCon = new DnDAttribute(baseValue);
-        final iCharacterAttributeList attributeList = new CharacterAttributeList();
+        final AttributeScore baseValue = new CharacterAttributeScore(10);
+        final CharacterAttribute expectedCon = new DnDAttribute(baseValue);
+        final AttributeList attributeList = new CharacterAttributeList();
         //act
-        final iCharacterAttribute actualCon = attributeList.constitution();
+        final CharacterAttribute actualCon = attributeList.constitution();
 
         //assert
         assertThat(actualCon).isEqualTo(expectedCon);
@@ -45,11 +45,11 @@ public class CharacterAttributeListTests {
     @Test
     public void should_HaveIntelligenceAttribute() {
         //arrange
-        final iAttributeValue baseValue = new AttributeValue(10);
-        final iCharacterAttribute expectedInt = new DnDAttribute(baseValue);
-        final iCharacterAttributeList attributeList = new CharacterAttributeList();
+        final AttributeScore baseValue = new CharacterAttributeScore(10);
+        final CharacterAttribute expectedInt = new DnDAttribute(baseValue);
+        final AttributeList attributeList = new CharacterAttributeList();
         //act
-        final iCharacterAttribute actualInt = attributeList.intelligence();
+        final CharacterAttribute actualInt = attributeList.intelligence();
 
         //assert
         assertThat(actualInt).isEqualTo(expectedInt);
@@ -58,11 +58,11 @@ public class CharacterAttributeListTests {
     @Test
     public void should_HaveWisdomAttribute() {
         //arrange
-        final iAttributeValue baseValue = new AttributeValue(10);
-        final iCharacterAttribute expectedWis = new DnDAttribute(baseValue);
-        final iCharacterAttributeList attributeList = new CharacterAttributeList();
+        final AttributeScore baseValue = new CharacterAttributeScore(10);
+        final CharacterAttribute expectedWis = new DnDAttribute(baseValue);
+        final AttributeList attributeList = new CharacterAttributeList();
         //act
-        final iCharacterAttribute actualWis = attributeList.wisdom();
+        final CharacterAttribute actualWis = attributeList.wisdom();
 
         //assert
         assertThat(actualWis).isEqualTo(expectedWis);
@@ -71,11 +71,11 @@ public class CharacterAttributeListTests {
     @Test
     public void should_HaveCharismaAttribute() {
         //arrange
-        final iAttributeValue baseValue = new AttributeValue(10);
-        final iCharacterAttribute expectedChr = new DnDAttribute(baseValue);
-        final iCharacterAttributeList attributeList = new CharacterAttributeList();
+        final AttributeScore baseValue = new CharacterAttributeScore(10);
+        final CharacterAttribute expectedChr = new DnDAttribute(baseValue);
+        final AttributeList attributeList = new CharacterAttributeList();
         //act
-        final iCharacterAttribute actualChr = attributeList.charisma();
+        final CharacterAttribute actualChr = attributeList.charisma();
 
         //assert
         assertThat(actualChr).isEqualTo(expectedChr);

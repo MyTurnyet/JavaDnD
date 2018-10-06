@@ -1,15 +1,15 @@
-public class CharacterAttributeList implements iCharacterAttributeList {
+public class CharacterAttributeList implements AttributeList {
 
-    private final iCharacterAttribute strength;
-    private final iCharacterAttribute dexterity;
-    private final iCharacterAttribute constitution;
-    private final iCharacterAttribute intelligence;
-    private final iCharacterAttribute wisdom;
-    private final iCharacterAttribute charisma;
+    private final CharacterAttribute strength;
+    private final CharacterAttribute dexterity;
+    private final CharacterAttribute constitution;
+    private final CharacterAttribute intelligence;
+    private final CharacterAttribute wisdom;
+    private final CharacterAttribute charisma;
 
 
-    private CharacterAttributeList(iCharacterAttribute strength, iCharacterAttribute dexterity, iCharacterAttribute constitution,
-                                   iCharacterAttribute intelligence, iCharacterAttribute wisdom, iCharacterAttribute charisma) {
+    private CharacterAttributeList(CharacterAttribute strength, CharacterAttribute dexterity, CharacterAttribute constitution,
+                                   CharacterAttribute intelligence, CharacterAttribute wisdom, CharacterAttribute charisma) {
         this.strength = strength;
         this.dexterity = dexterity;
         this.constitution = constitution;
@@ -18,36 +18,36 @@ public class CharacterAttributeList implements iCharacterAttributeList {
         this.charisma = charisma;
     }
 
-    private CharacterAttributeList(iAttributeValue defaultValue) {
+    private CharacterAttributeList(AttributeScore defaultValue) {
         this(new DnDAttribute(defaultValue), new DnDAttribute(defaultValue), new DnDAttribute(defaultValue),
                 new DnDAttribute(defaultValue), new DnDAttribute(defaultValue), new DnDAttribute(defaultValue));
     }
 
     CharacterAttributeList() {
-        this(new AttributeValue(10));
+        this(new CharacterAttributeScore(10));
     }
 
-    public iCharacterAttribute strength() {
+    public CharacterAttribute strength() {
         return strength;
     }
 
-    public iCharacterAttribute dexterity() {
+    public CharacterAttribute dexterity() {
             return dexterity;
     }
 
-    public iCharacterAttribute constitution() {
+    public CharacterAttribute constitution() {
         return constitution;
     }
 
-    public iCharacterAttribute intelligence() {
+    public CharacterAttribute intelligence() {
         return intelligence;
     }
 
-    public iCharacterAttribute wisdom() {
+    public CharacterAttribute wisdom() {
         return wisdom;
     }
 
-    public iCharacterAttribute charisma() {
+    public CharacterAttribute charisma() {
         return charisma;
     }
 }

@@ -9,7 +9,7 @@ public class CharacterTests {
         //arrange
         final DnDCharacter character = new DnDCharacter();
         //act
-        final iCharacterAttributeList attributeList = character.attributes();
+        final AttributeList attributeList = character.attributes();
         //assert
         assertThat(attributeList).isNotNull();
     }

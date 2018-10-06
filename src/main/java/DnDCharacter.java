@@ -1,8 +1,8 @@
 class DnDCharacter {
 
-    private final iCharacterAttributeList attributeList;
+    private final AttributeList attributeList;
 
-    private DnDCharacter(iCharacterAttributeList attributeList) {
+    private DnDCharacter(AttributeList attributeList) {
 
         this.attributeList = attributeList;
     }
@@ -11,7 +11,7 @@ class DnDCharacter {
         this(new CharacterAttributeList());
     }
 
-    iCharacterAttributeList attributes() {
+    AttributeList attributes() {
 
         return attributeList;
     }
